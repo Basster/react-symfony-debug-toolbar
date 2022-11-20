@@ -12,6 +12,10 @@ This component to the rescue! 🎉
 
 The `<SymfonyWebDebugToolbar />` component intercepts each `XMLHttpRequest` and `window.fetch` call (with a little help from [@mswjs/interceptors](https://www.npmjs.com/package/@mswjs/interceptors)) and looks for `x-debug-token` and `x-debug-token-link` headers in all responses, which are injected into every Symfony response, [if the Profiler Component is installed](https://symfony.com/doc/current/profiler.html#accessing-profiling-data-programmatically), and lists it in nearly the same way as the original Symfony Web Debug Toolbar does.
 
+## How does it look?
+
+![React Symfony Web Debug Toolbar in a very early stage](docs/react-symfony-web-debug-toolbar.png)
+
 ## How to install?
 
 ⚠️ once packaging and publishing to npm works 😉
