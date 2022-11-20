@@ -1,34 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import symfonyLogo from "./lib/assets/symfony.svg";
+import "./App.css";
+import { List } from "./List";
+import { SymfonyWebDebugToolbar } from "./lib/SymfonyWebDebugToolbar";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <a href="https://symfony.com" target="_blank">
+          <img src={symfonyLogo} className="logo symfony" alt="Symfony logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>Hello Symfony</h1>
+      <h2>
+        This is a list coming from{" "}
+        <a href="https://127.0.0.1:8000/list">https://127.0.0.1:8000/list</a>
+      </h2>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        <List />
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          Check the React Symfony Debug Toolbar in the lower right corner for
+          details.
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <SymfonyWebDebugToolbar />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
