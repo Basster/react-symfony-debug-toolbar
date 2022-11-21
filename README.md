@@ -1,5 +1,7 @@
 # React Symfony Web Debug Toolbar
 
+[![npm](https://img.shields.io/npm/v/@basster/react-symfony-debug-toolbar.svg)](https://www.npmjs.com/package/@basster/react-symfony-debug-toolbar)
+
 This project aims to help developers who develop a separate SPA frontend against a Symfony Backend, utilizing none of the bundled frontend stacks.
 
 In this case the frontend has its own index.html and cannot profit from Symfonys tremendous [Web Debug Toolbar & Profiler](https://symfony.com/doc/current/profiler.html).
@@ -17,8 +19,6 @@ The `<SymfonyWebDebugToolbar />` component intercepts each `XMLHttpRequest` and 
 ![React Symfony Web Debug Toolbar in a very early stage](docs/react-symfony-web-debug-toolbar.png)
 
 ## How to install?
-
-⚠️ once packaging and publishing to npm works 😉
 
 ```shell
 # npm
