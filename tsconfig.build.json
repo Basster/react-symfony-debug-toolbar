@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "outDir": "dist",
+    "noEmit": false,
+    "declaration": true,
+    "sourceMap": true
+  },
+  "exclude": [
+    "./src/app.tsx",
+    "./src/list.tsx",
+    "./src/main.tsx",
+  ]
+}

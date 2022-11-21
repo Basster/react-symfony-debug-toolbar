@@ -1,3 +1,3 @@
-import { SymfonyWebDebugToolbar } from "./SymfonyWebDebugToolbar";
+import { SymfonyWebDebugToolbar } from './symfony-web-debug-toolbar'
 
-export { SymfonyWebDebugToolbar };
+export { SymfonyWebDebugToolbar }
