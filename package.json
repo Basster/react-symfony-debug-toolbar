@@ -3,7 +3,7 @@
   "description": "Symfony Web Debug Toolbar flavor for React",
   "author": "Ole Rößner",
   "license": "MIT",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "type": "module",
   "repository": {
     "type": "git",
@@ -26,7 +26,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc --project tsconfig.build.json",
+    "build": "tsc --project tsconfig.build.json && mkdir -p dist/assets && cp src/lib/assets/*.svg dist/assets/",
     "test": "vitest",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",

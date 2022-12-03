@@ -7,9 +7,7 @@
     "declaration": true,
     "sourceMap": true
   },
-  "exclude": [
-    "./src/app.tsx",
-    "./src/list.tsx",
-    "./src/main.tsx",
+  "include": [
+    "./src/lib"
   ]
 }
