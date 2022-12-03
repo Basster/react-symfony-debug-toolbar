@@ -6,7 +6,7 @@ interface ContainerProps {
   hasRequests: boolean
 }
 
-const Container = styled.div`
+const SfToolbarInfo = styled.div`
   background-color: #222222;
   color: #eeeeee;
   font-size: 0.8rem;
@@ -46,7 +46,7 @@ export const RequestsTable: FC = () => {
   const getTitle = (length: number) => `${length} AJAX request${length > 1 ? 's' : ''}`
 
   return (
-    <Container hasRequests={hasResponses}>
+    <SfToolbarInfo className='sf-toolbar-info' hasRequests={hasResponses}>
       <header>
         {getTitle(responses.length)} (
         <A href='#' onClick={() => reset()}>
@@ -88,6 +88,6 @@ export const RequestsTable: FC = () => {
           })}
         </tbody>
       </table>
-    </Container>
+    </SfToolbarInfo>
   )
 }

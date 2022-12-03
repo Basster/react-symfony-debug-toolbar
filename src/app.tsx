@@ -1,5 +1,5 @@
 import React from 'react'
-import symfonyLogo from './lib/assets/symfony.svg'
+import * as symfonyLogo from './lib/assets/symfony.svg'
 import './app.css'
 import { List } from './list'
 import { SymfonyWebDebugToolbar } from './lib'
@@ -9,7 +9,7 @@ function App() {
     <div className='App'>
       <div>
         <a href='https://symfony.com' target='_blank'>
-          <img src={symfonyLogo} className='logo symfony' alt='Symfony logo' />
+          <img src={symfonyLogo.default} className='logo symfony' alt='Symfony logo' />
         </a>
       </div>
       <h1>Hello Symfony</h1>
