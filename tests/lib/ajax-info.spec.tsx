@@ -30,10 +30,10 @@ describe('AjaxInfo Component', () => {
   it('should not show counter if no responses present', () => {
     render(<AjaxInfo />)
 
-    expect(screen.queryByText('(')).not.toBeInTheDocument()
+    expect(screen.queryByText('0')).not.toBeInTheDocument()
   })
 
-  it('should show response counter in round brackets', () => {
+  it('should show response counter', () => {
     fakeResponses.push({
       error: false,
       url: 'https://127.0.0.1:8000/list?try=3.8541189811751844',
@@ -46,6 +46,6 @@ describe('AjaxInfo Component', () => {
 
     render(<AjaxInfo />)
 
-    expect(screen.getByText('(1)')).toBeInTheDocument()
+    expect(screen.getByText('1')).toBeInTheDocument()
   })
 })
